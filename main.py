@@ -55,7 +55,7 @@ def translate(gcf_request=None):
     # create context & render template
     context = {
         'orig':  {'text': text, 'lc': SOURCE},
-        'trans': {'text': translated, 'lc': TARGET},
+        'trans': {'text': text, 'lc': TARGET},
     }
     return render_template('index.html', **context)
 
